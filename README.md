@@ -2,6 +2,8 @@
 
 Functions that implement equations from "Mechanics of Materials" by R.C. Hibbeler.
 
+![Major principal stress](images/readme_image_1.png)
+
 ## Installation
 
 ```bash
