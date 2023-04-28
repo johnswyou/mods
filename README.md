@@ -12,7 +12,7 @@ $ pip install mods
 
 ## Usage
 
-- TODO
+- To do
 
 ## About the name
 "mods" stands for "mechanics of deformable solids", which is the course title for ME 219 and ME 220
