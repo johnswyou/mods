@@ -6,6 +6,8 @@ Functions that implement equations from "Mechanics of Materials" by R.C. Hibbele
 
 ## Installation
 
+The following does not yet work as this package is not yet on PyPI.
+
 ```bash
 $ pip install mods
 ```
