@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "mods"
 version = "0.1.0"
-description = "Functions that implement equations from "Mechanics of Materials" by R.C. Hibbeler."
+description = "Functions that implement equations from Mechanics of Materials by R.C. Hibbeler."
 authors = ["John You"]
 license = "MIT"
 readme = "README.md"
