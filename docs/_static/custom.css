@@ -1,0 +1,23 @@
+/*.wy-side-nav-search, .wy-nav-side {
+    background: #ffffff !important;
+}
+
+.wy-body-for-nav {
+    background: #ffffff;
+}
+
+.wy-nav-content-wrap {
+    background-color: #ffffff !important;
+}
+*/
+.wy-nav-content .rst-content {
+    background-color: #ffffff !important;
+}
+
+.wy-nav-content {
+    background-color: #ffffff !important;
+}
+
+.rst-content {
+    background-color: #ffffff !important;
+}
