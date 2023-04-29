@@ -14,7 +14,7 @@ $ pip install mods
 
 ## Usage
 
-You can plot Mohr's circle by providing `sigma_x`, `sigma_y`, `tau_xy` and and a plane inclination angle `theta` (in degrees):
+You can plot Mohr's circle by providing `sigma_x`, `sigma_y`, `tau_xy` and a plane inclination angle `theta` (in degrees):
 
 ```python
 from mods.stress_transformation import mohrs_circle_plane_angle_plot
