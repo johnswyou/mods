@@ -1,0 +1,19 @@
+Material Family,Material,Density (Mg/m3),Density (g/m3),Moduls of Elasticity (GPa),Moduls of Elasticity (MPa),Modulus of Rigidity (GPa),Modulus of Rigidity (MPa),Tens. Yield Strength (MPa),Comp. Yield Strength (MPa),Shear Yield Strength (MPa),Tens. Ultimate Strength (MPa),Comp. Ultimate Strength (MPa),Shear Ultimate Strength (MPa),%Elongation in 50 mm specimen,Poisson's Ratio,Coef. of Therm. Expansion (1e-6)/deg. C,Coef. of Therm. Expansion /deg. C
+Aluminum,2014-T6,2.79,2790000,73.1,73100,27,27000,414,414,172,469,469,290,10,0.35,23,0.000023
+Wrought Alloys,6061-T6,2.71,2710000,68.9,68900,26,26000,255,255,131,290,290,186,12,0.35,24,0.000024
+Cast Iron Alloys,Gray ASTM 20,7.19,7190000,67,67000,27,27000,,,,179,669,,0.6,0.28,12,0.000012
+Cast Iron Alloys,Malleable ASTM A-197,7.28,7280000,172,172000,68,68000,,,,276,572,,5,0.28,12,0.000012
+Copper Alloys,Red Brass C83400,8.74,8740000,101,101000,37,37000,70,70,,241,241,,35,0.35,18,0.000018
+Copper Alloys,Bronze C86100,8.83,8830000,103,103000,38,38000,345,345,,655,655,,20,0.34,17,0.000017
+Magnesium Alloy,[Am 1004-T611],1.83,1830000,44.7,44700,18,18000,152,152,,276,276,152,1,0.3,26,0.000026
+Steel Alloys,Structural A-36,7.85,7850000,200,200000,75,75000,250,250,,400,400,,30,0.32,12,0.000012
+Steel Alloys,Structural A992,7.85,7850000,200,200000,75,75000,345,345,,450,450,,30,0.32,12,0.000012
+Steel Alloys,Stainless 304,7.86,7860000,193,193000,75,75000,207,207,,517,517,,40,0.27,17,0.000017
+Steel Alloys,Tool L2,8.16,8160000,200,200000,75,75000,703,703,,800,800,,22,0.32,12,0.000012
+Titanium Alloy,[Tl-6A1-4V1],4.43,4430000,120,120000,44,44000,924,924,,"1,000","1,000",,16,0.36,9.4,0.0000094
+Concrete,Low Strength,2.38,2380000,22.1,22100,,,,,12,,,,,0.15,11,0.000011
+Concrete,High Strength,2.37,2370000,29,29000,,,,,38,,,,,0.15,11,0.000011
+Plastic Reinforced,Kevlar 49,1.45,1450000,131,131000,,,,,,717,483,20.3,2.8,0.34,,
+Plastic Reinforced,30% Glass,1.45,1450000,72.4,72400,,,,,,90,131,,,0.34,,
+Wood Select Structural Grade,Douglas Fir,0.47,470000,13.1,13100,,,,,,2.1,26,6.2,,0.29,,
+Wood Select Structural Grade,White Spruce,3.6,3600000,9.65,9650,,,,,,2.5,36,6.7,,0.31,,

@@ -1,0 +1,19 @@
+Material Family,Material,Density (lb/in^3),Moduls of Elasticity (1e3 ksi),Moduls of Elasticity (ksi),Modulus of Rigidity (1e3 ksi),Modulus of Rigidity (ksi),Tens. Yield Strength (ksi),Comp. Yield Strength (ksi),Shear Yield Strength (ksi),Tens. Ultimate Strength (ksi),Comp. Ultimate Strength (ksi),Shear Ultimate Strength (ksi),%Elongation in 2 in specimen,Poisson's Ratio,Coef. of Therm. Expansion (1e-6)/deg. F,Coef. of Therm. Expansion /deg. F
+Aluminum,2014-T6,0.101,10.6,10600,3.9,3900,60,60,25,68,68,42,10,0.35,12.8,0.0000128
+Wrought Alloys,6061-T6,0.098,10,10000,3.7,3700,37,37,19,42,42,27,12,0.35,13.1,0.0000131
+Cast Iron Alloys,Gray ASTM 20,0.26,10,10000,3.9,3900,,,,26,96,,0.6,0.28,6.7,0.0000067
+Cast Iron Alloys,Malleable ASTM A-197,0.263,25,25000,9.8,9800,,,,40,83,,5,0.28,6.6,0.0000066
+Copper Alloys,Red Brass C83400,0.316,14.6,14600,5.4,5400,11.4,11.4,,35,35,,35,0.35,9.8,0.0000098
+Copper Alloys,Bronze C86100,0.319,15,15000,5.6,5600,50,50,,35,35,,20,0.34,9.6,0.0000096
+Magnesium Alloy,[Am 1004-T611],0.066,6.48,6480,2.5,2500,22,22,,40,40,22,1,0.3,14.3,0.0000143
+Steel Alloys,Structural A-36,0.284,29,29000,11,11000,36,36,,58,58,,30,0.32,6.6,0.0000066
+Steel Alloys,Structural A992,0.284,29,29000,11,11000,50,50,,65,65,,30,0.32,6.6,0.0000066
+Steel Alloys,Stainless 304,0.284,28,28000,11,11000,30,30,,75,75,,40,0.27,9.6,0.0000096
+Steel Alloys,Tool L2,0.295,29,29000,11,11000,102,102,,116,116,,22,0.32,6.5,0.0000065
+Titanium Alloy,[Tl-6A1-4V1],0.16,17.4,17400,6.4,6400,134,134,,145,145,,16,0.36,5.2,0.0000052
+Concrete,Low Strength,0.086,3.2,3200,,,,,1.8,,,,,0.15,6,0.000006
+Concrete,High Strength,0.086,4.2,4200,,,,,5.5,,,,,0.15,6,0.000006
+Plastic Reinforced,Kevlar 49,0.0524,19,19000,,,,,,104,70,10.2,2.8,0.34,,
+Plastic Reinforced,30% Glass,0.0524,10.5,10500,,,,,,13,19,,,0.34,,
+Wood Select Structural Grade,Douglas Fir,0.017,1.9,1900,,,,,,0.3,3.78,0.9,,0.29,,
+Wood Select Structural Grade,White Spruce,0.13,1.4,1400,,,,,,0.36,5.18,0.97,,0.31,,
