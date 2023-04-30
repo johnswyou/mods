@@ -1,6 +1,6 @@
 # mods
 
-Functions that implement equations from "Mechanics of Materials" by R.C. Hibbeler.
+Functions that implement equations from "Mechanics of Materials" by R.C. Hibbeler (9th edition).
 
 ![Major principal stress](images/readme_image_1.png)
 
