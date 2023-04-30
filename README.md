@@ -29,6 +29,8 @@ mohrs_circle_plane_angle_plot(sigma_x, sigma_x, tau_xy, theta)
 
 ![](images/mohrs_circle_plane_angle_plot.png)
 
+See the documentation for more details.
+
 ## About the name
 "mods" stands for "mechanics of deformable solids", which is the course title for ME 219 and ME 220
 at the University of Waterloo's department of mechanical and mechatronics engineering. "Mechanics of Materials"
