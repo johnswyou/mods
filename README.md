@@ -12,6 +12,22 @@ The following does not yet work as this package is not yet on PyPI.
 $ pip install mods
 ```
 
+For now, perform the following steps:
+
+1. Clone the repo
+2. `cd` into the cloned repository and do:
+
+```bash
+$ poetry install
+```
+
+You need to ensure that you have `poetry` installed and accessible from your command line. Ideally, you should be
+working in a `conda` environment.
+
+## Documentation
+
+You can find the documentation [here](https://mechanics-of-deformable-solids.readthedocs.io/).
+
 ## Usage
 
 You can plot Mohr's circle by providing `sigma_x`, `sigma_y`, `tau_xy` and a plane inclination angle `theta` (in degrees):
