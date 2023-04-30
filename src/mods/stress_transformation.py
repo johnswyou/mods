@@ -26,11 +26,12 @@ def normal_stress_transform(sigma_x, sigma_y, tau_xy, theta):
         theta (float): Angle of the inclined plane in degrees.
 
     Returns:
-        float: Normal stress on the inclined plane.
+        tuple: Normal stress on the inclined plane in the x' and y' directions.
     """
     theta_rad = math.radians(theta)  # converting degrees to radians
-    sigma_n = (sigma_x + sigma_y)/2 + (sigma_x - sigma_y)/2*math.cos(2*theta_rad) + tau_xy*math.sin(2*theta_rad)
-    return sigma_n
+    sigma_x_prime = (sigma_x + sigma_y)/2 + (sigma_x - sigma_y)/2*math.cos(2*theta_rad) + tau_xy*math.sin(2*theta_rad)
+    sigma_y_prime = (sigma_x + sigma_y)/2 - (sigma_x - sigma_y)/2*math.cos(2*theta_rad) - tau_xy*math.sin(2*theta_rad)
+    return sigma_x_prime, sigma_y_prime
 
 def shear_stress_transform(sigma_x, sigma_y, tau_xy, theta):
     """
@@ -49,7 +50,7 @@ def shear_stress_transform(sigma_x, sigma_y, tau_xy, theta):
     tau_n = -(sigma_x - sigma_y)/2*math.sin(2*theta_rad) + tau_xy*math.cos(2*theta_rad)
     return tau_n
 
-def principal_stress(sigma_x, sigma_y, tau_xy, stress_type):
+def principal_stress(sigma_x, sigma_y, tau_xy):
     """
     Calculate the principal stress.
 
@@ -60,18 +61,11 @@ def principal_stress(sigma_x, sigma_y, tau_xy, stress_type):
         stress_type (str): 'max' for major principal stress, 'min' for minor principal stress.
 
     Returns:
-        float: Principal stress, either major or minor based on stress_type.
-
-    Raises:
-        ValueError: If stress_type is not 'max' or 'min'.
+        tuple: Major and minor principal stresses.
     """
-    if stress_type == "max":
-        sigma = (sigma_x + sigma_y)/2 + math.sqrt(((sigma_x - sigma_y)/2)**2 + tau_xy**2)
-    elif stress_type == "min":
-        sigma = (sigma_x + sigma_y)/2 - math.sqrt(((sigma_x - sigma_y)/2)**2 + tau_xy**2)
-    else:
-        raise ValueError("Invalid stress_type. Choose either 'max' or 'min'.")
-    return sigma
+    sigma_1 = (sigma_x + sigma_y)/2 + math.sqrt(((sigma_x - sigma_y)/2)**2 + tau_xy**2)
+    sigma_2 = (sigma_x + sigma_y)/2 - math.sqrt(((sigma_x - sigma_y)/2)**2 + tau_xy**2)
+    return sigma_1, sigma_2
 
 def principal_stress_angle(sigma_x, sigma_y, tau_xy):
     """
@@ -89,7 +83,8 @@ def principal_stress_angle(sigma_x, sigma_y, tau_xy):
     denominator = sigma_x - sigma_y
     theta_p_rad = math.atan2(numerator, denominator) / 2  # atan2 takes care of the angle quadrant
     theta_p_deg = math.degrees(theta_p_rad)  # converting radians to degrees
-    return theta_p_deg
+    
+    return theta_p_deg, theta_p_deg + 90
 
 def maximum_in_plane_shear_stress(sigma_x, sigma_y, tau_xy):
     """
@@ -122,7 +117,8 @@ def maximum_in_plane_shear_stress_angle(sigma_x, sigma_y, tau_xy):
     denominator = 2 * tau_xy
     theta_max_rad = math.atan2(numerator, denominator) / 2  # atan2 takes care of the angle quadrant
     theta_max_deg = math.degrees(theta_max_rad)  # converting radians to degrees
-    return theta_max_deg
+    
+    return theta_max_deg, theta_max_deg + 90
 
 def mohrs_circle(sigma_x, sigma_y, tau_xy):
     """
