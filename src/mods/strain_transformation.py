@@ -205,7 +205,18 @@ def mohrs_circle_strain(epsilon_x, epsilon_y, gamma_xy, theta):
     return mohrs_circle_strain(epsilon_x_prime, epsilon_y_prime, gamma_xy_prime)
 
 def mohrs_circle_strain_plot(epsilon_x, epsilon_y, gamma_xy, theta):
+    """
+    Plots the Mohr's circle and a point representing the transformed strain state and returns the plot.
 
+    Parameters:
+        epsilon_x (float): Strain value in the x-direction
+        epsilon_y (float): Strain value in the y-direction
+        gamma_xy (float): Shear strain value in the xy-plane
+        theta (float): Plane inclination angle in degrees
+
+    Returns:
+        matplotlib.pyplot.plot: Plot of the Mohr's circle and transformed strain state
+    """
     epsilon_x_prime, gamma_xy_prime = mohrs_circle_strain(epsilon_x, epsilon_y, gamma_xy, theta)
     center, radius = mohrs_circle(epsilon_x, epsilon_y, gamma_xy)
     circle = plt.Circle((center, 0), radius, fill=False)
